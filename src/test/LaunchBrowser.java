@@ -21,6 +21,8 @@ public class LaunchBrowser {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 		
+		WebElement LoginLink = driver.findElement(By.linkText("Log in"));
+		LoginLink.click();
 
 	}
 
